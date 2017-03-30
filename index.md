@@ -32,7 +32,7 @@ herokuではHTMLプロジェクトの選択はできないので、PHPプロジ�
     └── index.php
 ```
 
-README.mdは省略可能。Procfileには`web: vendor/bin/heroku-php-apache2 public/`という記述を、composer.jsonには`{}`を最小構成として記述。
+README.mdは省略可能。Procfileには`web: vendor/bin/heroku-php-apache2 public/`という記述を、composer.jsonには`{}`を最小構成として記述。public/に表示ファイルを置く
 
 ### 課題
 
