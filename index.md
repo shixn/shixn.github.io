@@ -41,6 +41,14 @@ README.mdは省略可能。Procfileには`web: vendor/bin/heroku-php-apache2 pub
 * JSのチェックも同様にcircleCIにて行える様にする。[MOCHA](https://mochajs.org/)
 * [Code climate](https://codeclimate.com/)ならRuby,PHP,Python,jsのチェックが可能
 
+### フィードバック
+* 書いた方が良いのか、目でみてチェックした方が良いのか。
+* リグレッションの観点からテストを行った方がいいのか、目で見た方が良いのか。
+* テストを書く様な環境、すぐにテストを書く様な習慣を身につけておく。
+* Code climate はカバレッジテストの一つである。
+* css のリンターのルールをカスタマイズする。
+* シェルが使えるか見てみる。
+
 ## 2. 静的サイトの大量ぺージ作成(数十~数百ぺージ)
 大量ぺージ作成においては、要素のテンプレート化が必要。
 そのため、静的ぺージ作成ツールを用いて行きたい。
@@ -57,6 +65,11 @@ README.mdは省略可能。Procfileには`web: vendor/bin/heroku-php-apache2 pub
 * middleman 、gulp-ejsどちらが良いか。
 * 検証用サーバはheroku、lollipopどちらが良いか。lollipopを選択した場合、circleCIとの繋ぎこみ等で検証要
 
+### フィードバック
+
+* lollipop の繋ぎこみはいけそう(調べる) 
+* [middlemanでのデプロイ](https://blog.unasuke.com/2015/middleman-deploy-from-circle-ci/)について見てみる
+
 ## 3. 動的サイトの作成(非WP)
 おもに、WPへの組み込みは先方が行うから、phpの形式でぺージだけ作ってね、という案件の場合。
 
@@ -68,6 +81,10 @@ README.mdは省略可能。Procfileには`web: vendor/bin/heroku-php-apache2 pub
 ### 課題
 
 * vagrantを起動するか、mac自体のapacheを起動して開発するのだったらどちらが良いか。
+
+### フィードバック
+
+* 慣れている方で行う
 
 ## 4. 動的サイトの作成(wp)
 WPの作成を行う必要があるので、WPの開発環境を用いる。
@@ -84,5 +101,13 @@ VCCWはVagrant上でのWordpressの開発環境をサポートしたツール。
 
 ### 課題
 
-* MAMPについてよく調べていないので、どちらが良いか。
+* MAMPについて実経験がないので、どちらが良いか。
+
+### フィードバック
+
+* カスタムフィールドも反映されるのかをチェックする
+
+## 全体を通しての課題
+
+* 例えば、新人の方に作業して頂く際にも、上記を適用した方が良いか。htmlを覚えた状態の時に、
 
